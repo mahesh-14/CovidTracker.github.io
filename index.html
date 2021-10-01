@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/wear mask.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <title>COVID ANALYSIS-HOME</title>
+</head>
+
+<body class="background">
+    <!-- NAVIGATION SECTION -->
+    <nav class="navbar">
+        <div class="logo">
+            Covid-19 Tracker
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="symptoms.html">Symptoms</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- INDIA LIVE DATA SECTION -->
+    <h2>Covid-19 India Results</h2>
+    <div class="content">
+
+        <div class="confirmedrow">
+            <h5>Confirmed</h5>
+            <p id="confirmed"></p>
+        </div>
+
+        <div class="activerow">
+            <h5>Active</h5>
+            <p id="active"></p>
+        </div>
+
+        <div class="recoveredrow">
+            <h5>Recovered</h5>
+            <p id="recovered"></p>
+        </div>
+
+        <div class="deathrow">
+            <h5>Deceased</h5>
+            <p id="deaths"></p>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <!-- INDIA LIVE DATA CHART -->
+    <div class="datachart">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+</body>
+
+</html>
